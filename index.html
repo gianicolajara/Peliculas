@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main class="container">
+        <input type="search" name="search" id="search" class="input-form" placeholder="Search Show">
+        <div class="message-error d-none">
+            <p class="message-error__description"></p>
+        </div>
+        <section id="movies" class="grid-fluid"></section>
+    </main>
+
+    <template id="template-card">
+        <div class="card">
+            <div class="card__head">
+                <figure>
+                    <img>
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div class="card__body">
+                <h1 class="card__title"></h1>
+                <p class="card__description"></p>
+                <a class="card__link" href="#" target="_blank" rel="noopener noreferrer">Ver mas</a>
+            </div>
+        </div>
+    </template>
+
+    <script src="./scripts/scripts.js" type="module"></script>
+</body>
+</html>
